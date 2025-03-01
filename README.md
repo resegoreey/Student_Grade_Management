@@ -15,6 +15,7 @@ This is a simple Python program to help manage students' grades. It allows addin
 - Make sure you have Python 3.x installed on your machine.
 - Download or copy the student_grade_tracker.py file.
 - Run the file using the command:
+  python student_grade_tracker.py
 
 # Interaction
 
