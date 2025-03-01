@@ -71,29 +71,31 @@ def statistics():
 Highest Mark: {highest_mark}
 Lowest Mark: {lowest_mark}""")
 
+def main():
+    while True:
+        print("""What would you like to do?
+            1. Add Student
+            2. Update Grades
+            3. Remove student
+            4. Display students
+            5. Stats
+            6. Exit""")
+        
+        choice = input("Enter choice(1-6): ")
+        if choice == "1":
+            add_students()
+        elif choice == "2":
+            update_grades()
+        elif choice == "3":
+            remove_student()
+        elif choice == "4":
+            display_students()
+        elif choice == "5":
+            statistics()
+        elif choice == "6":
+            print("Exiting the program, Bye!")
+            break
+        else:
+            print("Make a valid choice from 1 to 6")
 
-while True:
-    print("""What would you like to do?
-          1. Add Student
-          2. Update Grades
-          3. Remove student
-          4. Display students
-          5. Stats
-          6. Exit""")
-    
-    choice = input("Enter choice(1-6): ")
-    if choice == "1":
-        add_students()
-    elif choice == "2":
-        update_grades()
-    elif choice == "3":
-        remove_student()
-    elif choice == "4":
-        display_students()
-    elif choice == "5":
-        statistics()
-    elif choice == "6":
-        print("Exiting the program, Bye!")
-        break
-    else:
-        print("Make a valid choice from 1 to 6")
+main()
